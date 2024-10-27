@@ -2,21 +2,21 @@ public class Main {
     public static void main(String[] args) {
         int clientOs = 0;
         if (clientOs == 0) {
-            System.out.println("Установите версию для iOS по ссылке");
+            System.out.println("Установите версию приложения для iOS по ссылке");
         }else  if (clientOs == 1){
-            System.out.println("Установите версию приложения для Android");}
+            System.out.println("Установите версию приложения для Android по ссылке");}
 
 
 
-        clientOs = 1;
-        int clienDeviceYear = 2015;
-        if (clientOs == 0 && clienDeviceYear < 2015) {
+        int clientDeviceOs = 1;
+        int clientDeviceYear = 2015;
+        if (clientDeviceOs == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOs == 0 && clienDeviceYear >= 2015) {
+        } else if (clientDeviceOs == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите обычную версию приложения для iOS по ссылке");
-        } else if (clientOs == 1 && clienDeviceYear < 2015) {
+        } else if (clientDeviceOs == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOs == 1 && clienDeviceYear >= 2015) {
+        } else if (clientDeviceOs == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите обычную версию приложения для Android по ссылке");}
 
 
@@ -39,7 +39,9 @@ public class Main {
         } else {
             System.out.println("Доставки нет");}
 
-        int monthNumber = 12;
+
+
+        int monthNumber = 14;
         switch (monthNumber) {
             case 12:
             case 1:
